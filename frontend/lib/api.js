@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BASE = "http://localhost:8000/api/v1/pdf";
+// const BASE = "http://localhost:8000/api/v1/pdf";
+const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000";
 
 export const uploadPDF = async (file) => {
   const fd = new FormData();
