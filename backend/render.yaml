@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: pdf-editor-backend
+    env: python
+    buildCommand: |
+      curl -LsSf https://astral.sh/uv/install.sh | sh
+    startCommand: ./start.sh
+    envVars:
+      - key: ENV
+        value: production

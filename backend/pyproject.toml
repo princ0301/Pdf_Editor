@@ -11,3 +11,6 @@ dependencies = [
     "python-multipart>=0.0.20",
     "uvicorn[standard]>=0.38.0",
 ]
+
+[tool.uv]
+python = "3.12"
