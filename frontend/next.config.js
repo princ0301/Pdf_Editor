@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    turbo: false, // ⛔ Disable Turbopack
+  },
+
   webpack: (config, { isServer }) => {
     // Ignore Node.js modules that pdfjs-dist tries to use in browser
     if (!isServer) {
