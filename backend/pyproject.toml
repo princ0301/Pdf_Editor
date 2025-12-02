@@ -13,4 +13,5 @@ dependencies = [
 ]
 
 [tool.uv]
-python = "3.12"
+python-preference = "only-system"
+required-version = ">=0.8"
